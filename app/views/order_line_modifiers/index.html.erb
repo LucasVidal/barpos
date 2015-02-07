@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Order Line Modifiers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Order line</th>
+      <th>Modifier</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @order_line_modifiers.each do |order_line_modifier| %>
+      <tr>
+        <td><%= order_line_modifier.order_line %></td>
+        <td><%= order_line_modifier.modifier %></td>
+        <td><%= link_to 'Show', order_line_modifier %></td>
+        <td><%= link_to 'Edit', edit_order_line_modifier_path(order_line_modifier) %></td>
+        <td><%= link_to 'Destroy', order_line_modifier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Order line modifier', new_order_line_modifier_path %>

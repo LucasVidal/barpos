@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Order line:</strong>
+  <%= @order_line_modifier.order_line %>
+</p>
+
+<p>
+  <strong>Modifier:</strong>
+  <%= @order_line_modifier.modifier %>
+</p>
+
+<%= link_to 'Edit', edit_order_line_modifier_path(@order_line_modifier) %> |
+<%= link_to 'Back', order_line_modifiers_path %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Payment:</strong>
+  <%= @payment_audit.payment %>
+</p>
+
+<p>
+  <strong>Amount from:</strong>
+  <%= @payment_audit.amount_from %>
+</p>
+
+<p>
+  <strong>Amount to:</strong>
+  <%= @payment_audit.amount_to %>
+</p>
+
+<p>
+  <strong>Payment type from:</strong>
+  <%= @payment_audit.payment_type_from %>
+</p>
+
+<p>
+  <strong>Payment type to:</strong>
+  <%= @payment_audit.payment_type_to %>
+</p>
+
+<p>
+  <strong>Datetime:</strong>
+  <%= @payment_audit.datetime %>
+</p>
+
+<%= link_to 'Edit', edit_payment_audit_path(@payment_audit) %> |
+<%= link_to 'Back', payment_audits_path %>

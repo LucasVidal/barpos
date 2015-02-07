@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  payment_id: 
+  amount_from: 
+  amount_to: 
+  payment_type_from: MyString
+  payment_type_to: MyString
+  datetime: 2015-02-07 14:33:09
+
+two:
+  payment_id: 
+  amount_from: 
+  amount_to: 
+  payment_type_from: MyString
+  payment_type_to: MyString
+  datetime: 2015-02-07 14:33:09

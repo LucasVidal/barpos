@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @order_audit.order %>
+</p>
+
+<p>
+  <strong>Datetime:</strong>
+  <%= @order_audit.datetime %>
+</p>
+
+<p>
+  <strong>Status from:</strong>
+  <%= @order_audit.status_from %>
+</p>
+
+<p>
+  <strong>Status to:</strong>
+  <%= @order_audit.status_to %>
+</p>
+
+<%= link_to 'Edit', edit_order_audit_path(@order_audit) %> |
+<%= link_to 'Back', order_audits_path %>

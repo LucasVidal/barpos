@@ -1,0 +1,25 @@
+<%= form_for(@order_line_modifier) do |f| %>
+  <% if @order_line_modifier.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order_line_modifier.errors.count, "error") %> prohibited this order_line_modifier from being saved:</h2>
+
+      <ul>
+      <% @order_line_modifier.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :order_line_id %><br>
+    <%= f.text_field :order_line_id %>
+  </div>
+  <div class="field">
+    <%= f.label :modifier_id %><br>
+    <%= f.text_field :modifier_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
