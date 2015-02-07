@@ -1,6 +1,6 @@
 product_list = [
-  [ "Café", 12 ],
-  [ "Café con leche", 15 ],
+  [ "Cafe", 12 ],
+  [ "Cafe con leche", 15 ],
   [ "Gaseosa", 20 ],
   [ "Milanesa", 50 ],
   [ "Milanesa Napolitana", 56 ],
