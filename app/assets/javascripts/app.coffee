@@ -11,10 +11,12 @@ barpos.config([ '$routeProvider',
     $routeProvider
       .when('/',
         templateUrl: "index.html"
-        controller: 'ProductsController'
-      ).when('/product/:productId',
-        templateUrl: "show.html"
-        controller: 'ProductController'
-       )
+        controller: 'TablesController'
+      #  controller: 'ProductsController'
+      )
+      #.when('/product/:productId',
+      #  templateUrl: "show.html"
+      #  controller: 'ProductController'
+      # )
 ])
 controllers = angular.module('controllers',[])

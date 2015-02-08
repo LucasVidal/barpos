@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'home#index'
+  get 'tables/current_status' => 'tables#current_status'
 
   resources :product_modifiers
 

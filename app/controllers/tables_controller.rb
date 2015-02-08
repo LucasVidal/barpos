@@ -7,6 +7,11 @@ class TablesController < ApplicationController
     @tables = Table.all
   end
 
+  # GET /current_status.json
+  def current_status
+    @tables_with_order = Table.all.map { | table | [table, table.orders.open.last] }
+  end
+
   # GET /tables/1
   # GET /tables/1.json
   def show
