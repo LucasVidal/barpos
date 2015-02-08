@@ -19,6 +19,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+gem 'teaspoon', '0.8.0'
+gem 'phantomjs', '1.9.8.0'
 
 group :test, :development do
   gem "rspec-rails", "~> 2.0"

@@ -7,7 +7,7 @@ class ProductsController < ApplicationController
     @products = if params[:keywords]
                   Product.where('name like ?',"%#{params[:keywords]}%")
                 else
-                  []
+                  Product.all
                 end
   end
 
